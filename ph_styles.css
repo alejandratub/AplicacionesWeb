@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*
+   Laboratory 2.
+   
+   PHCT Typographic Style Sheet
+   Author: Alejandra Tubilla Castellanos
+   Date:   22/08/2018
+   
+   Filename: ph_styles.css
+
+*/
+@font-face {
+    font-family: DobkinPlain;
+    src: url('DobkinPlain.ttf') format('truetype');
+}
+@font-face {
+    font-family: cac_champagne;
+    src: url('cac_champagne.ttf') format('truetype');
+}
+@font-face {
+    font-family: oneNineFourTwo;
+    src: url('1942.ttf') format('truetype');
+}
+
+
+#uno{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+
+section{
+	clear: right;
+	display: block;
+}
+body{
+	background-color: hsl(58, 31%, 84%);
+}
+p{
+	margin: 0;
+	padding: 5px, 25px, 25px, 25px;
+}
+section.playbill dd > dt{
+	font-size: 1.5em;
+}
+address{
+	font-style: normal;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+body  p{
+	font-size: 1.1em;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+section.playbill dd > dt{
+	font-size: 1.5em;
+}
+/* Structural Styles */
+address{
+	font-style: normal;
+	font-size: 0.9em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+header {
+    background-color: black;
+}
+html {
+    background-color: hsl(91,8%,56%);
+}
+
+
+/* Navigation Styles */
+
+nav >ul > li > a:link, nav >ul >li a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
+nav >ul > li > a:hover{
+	font-color: hsla(0,0%,100%, 0.7);
+	background-color: hsla(0,0%,42%,0.7);
+}
+
+nav >ul > li > a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;	
+}
+
+/* Section Styles */
+
+section.playbill h1{
+	font-size: 3em;
+	font-weight: normal;
+	margin: 0;
+	padding: 20px 0px 10px 20px;
+}
+#play1{
+	background-color: hsl(240, 100%, 88%);
+}
+#play1 h1{
+	font-family: cac_champagne;
+}
+#play1 dt {
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+#play2{
+	background-color: hsl(25, 88%, 73%);
+}
+#play2 h1 {
+    font-family: oneNineFourTwo;
+}
+#play2 dt {
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+#play3 h1 {
+    font-family: Impact;
+}
+#play3 dt {
+    color: hsla(0, 0%, 0%, 0.4);
+}
+#play3{
+	background-color: hsl(0, 100%, 75%);
+}
+
+#play4 h1{
+	font-family: DobkinPlain;
+}
+
+
+#play4 dt{
+	color: hsla(0, 0%, 0%, 0.4);
+}
+#play4{
+	background-color: #D1AAFE;
+
+}
+ dd {
+	font-size: 1.3em;
+	margin-left: 0;
+	padding-bottom: 10px;
+}
+dt {
+	font-size: 1.3em;
+}
+ 
+
+
+/* Description List Styles */
+
