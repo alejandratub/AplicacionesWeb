@@ -1,0 +1,194 @@
+@charset "utf-8"
+/*Alejandra Tubilla Castellanos*/
+/*A01022960*/
+
+/**********GENERAL SETTINGS*********/
+*
+{
+	box-sizing: content-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(230, 182, 144);
+}
+body {
+	width: 95%;
+    background-color: rgb(250, 238, 218);
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/********HEADER*********/
+body header a {
+    display: block;
+    width: 95%;
+}
+header ul, nav, li, a{
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+header ul{
+	padding-bottom:12.075%;
+	padding-top:2%;
+}
+header li{
+	padding-bottom: 1%;
+}
+header a{
+	padding-left:60%;
+	margin-left: 13%;
+}
+header img{
+	display:block;
+	float: left;
+	width: 70%;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    
+}
+ 
+header{
+	background-color: rgb(61, 138, 216);
+	display:block;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+
+/***********NAVBARS AND LISTS*************/
+nav >ul > li > a:link, nav >ul >li a:visited {
+    color: white;
+    text-decoration: none;
+}
+nav >ul > li > a:hover{
+	font-color: hsla(0,0%,100%, 0.7);
+	background-color: hsla(0,0%,42%,0.7);
+}
+/************TOPICS NAVBAR*************/
+.horizontal{
+	background-color: rgb(18, 31, 102);
+	margin-top: -1.25%;
+}
+nav.horizontal ul li a {
+    
+    margin-top:0;
+	padding-bottom: 10px;
+	text-align: center;	
+	width: 100%;
+}
+ nav.horizontal li
+{
+ display:inline-block; 
+ width: 11.5%;
+
+}
+nav.horizontal ul{
+	width: 100%;
+}
+nav.horizontal a{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-right: 50%;
+	text-align: center;
+}
+
+/*************TOPICS TEXT**************/
+#topics img {
+    display: block;
+    width: 30%;
+    height:30%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  ul#topics li p {
+    color: rgb(95, 114, 232);
+    font-size: 0.8em;
+    margin: 0;
+    padding: 15%;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+ #topics li {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-left: 0%;
+    margin-right: 5%;
+    text-align: center;
+	align-content: center;
+   }
+
+hr{
+	margin:0;
+	width: 50%;
+	display: block;
+	/*align-content: center;*/
+}
+
+ul.row3{
+	display: inline;
+}
+/*********** COMMENTS******************/
+ul#comments img{
+	clip-path: circle(40% at 50% 50%);
+	height:30%;
+	width:30%;
+}
+div.col-1-2{
+	float:left;
+	width: 50%;
+}
+div.col-1-3{
+	float:right;
+	width:50%;
+}
+#comments{
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul#comments li p {
+    font-size: 0.9em;
+    color: rgb(121, 121, 121);
+    line-height: 1.2em;
+ }
+ ul#comments{
+ 	    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+ }
+
+    /*****************FOOTER**************/
+ footer {
+ 	display: block;
+    clear: both;
+	color: rgb(186, 186, 156);
+    background-color: rgb(44, 91, 169);
+    font-size: 0.9em;
+    padding: 10px 0px;
+    text-align: center;
+        margin: 0;
+}
