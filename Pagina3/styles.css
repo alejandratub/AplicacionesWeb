@@ -1,0 +1,241 @@
+/*
+Arturo Burela
+Alejandra Tubilla
+*/
+
+html{
+  width: 100vw;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+ /* overflow: hidden;*/
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/concertedit.jpg");
+  background-repeat: no-repeat;
+  background-size: 2000px;
+}
+
+.main{
+  height: 900px;
+  width: 1000px;
+  margin: auto;
+  background-color: hsla(0,0%,42%,0.7);
+  position: relative;
+}
+
+header {
+  position: relative;
+}
+
+header h1{
+  padding-top: 3vh;
+  margin: 0;
+  border: 0;
+  color: hsla(193, 86%, 34%, 1);
+  text-shadow: #464343 5px 5px 5px;
+  font-size: 76pt;
+}
+
+header span{
+  transform: rotate(90deg);
+  display: inline-block;
+  color: hsla(12, 76%, 61%, 1);
+  text-shadow: white 1px -1px 5px;
+}
+
+header img{
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 80px;
+}
+
+header p{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  overflow: hidden;
+  background-color: #0f0f0f;
+}
+
+nav > a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  width: 14%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+nav span {
+  width: 15%;
+  float: left;
+}
+
+nav span a{
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+nav span a:hover {
+  background-color: yellow;
+}
+
+nav span i{
+  width: 100%;
+  text-align: center;
+  float: left;
+  font-size: 18px;
+}
+
+nav a:hover{
+  background-color: yellow;
+}
+
+.principal{
+  clear: both;
+  width: 100%;
+  height: 100%;
+}
+
+.col-l{
+  float: left;
+  width:20%;
+  height:100%;
+  transform: rotateY(40deg) skew(0,5deg);
+}
+
+.center{
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+
+.col-r{
+  float: left;
+  width:20%;
+  height:100%;
+  transform: rotateY(-40deg) skew(0,-5deg);
+}
+
+.articulo{
+  width: 80%;
+  background-image: linear-gradient(grey 10%,grey 10%,lightgrey 20%,lightgrey 80%);
+  text-align: center;
+   border-radius: 10px;
+  margin: auto;
+}
+.articulo h4{
+  color:yellow;
+}
+.scene {
+  width: 600px;
+  height: 400px;
+  perspective: 400px;
+  padding-top: 20%;
+}
+
+.cube {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
+
+.side {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.sidefront,
+.sideback {
+  width: 600px;
+  height: 400px;
+  line-height: 400px;
+}
+
+.sideright,
+.sideleft {
+  width: 200px;
+  height: 400px;
+  left: 200px;
+  line-height: 400px;
+}
+.block{
+  background-color: white;
+  color:yellow;
+  width:600px;
+  height:200px;
+  top:100px;
+  line-height: 200px;
+  margin-top: -7%;
+}
+.block2{
+  background-color: white;
+  color:yellow;
+  width:600px;
+  height:200px;
+  margin-top: -7%;
+  transform: rotate(-180deg);
+}
+.sidetop,
+.sidebottom {
+  width: 600px;
+  height: 200px;
+  top: 100px;
+  line-height: 200px;
+}
+
+.sidefront  { display: none;}
+.sideright  { background-image: url("images/imaginedragons.jpg");}
+.sideback   { background-image: url("images/lorde.jpg"); }
+.sideleft   { background-image: url("images/robbie.jpg"); }
+
+
+.sidefront  { transform: rotateY(  0deg) translateZ( 100px); }
+.sideback   { transform: rotateY(180deg) translateZ( 100px); }
+
+.sideright  { transform: rotateY( 90deg) translateZ(300px); }
+.sideleft   { transform: rotateY(-90deg) translateZ(300px); }
+
+.sidetop    { transform: rotateX( 90deg) translateZ(200px); }
+.sidebottom { transform: rotateX(-90deg) translateZ(200px); }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: darkgray;
+  width: 100%;
+  left: 0;
+}
+
+footer > p{
+  width: 100%;
+  text-align: center;
+}
+
+footer a:hover {
+  color: black;
+}
