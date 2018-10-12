@@ -123,6 +123,9 @@ nav > ul{
   header > img{
     text-align: center;
   }
+  #text{
+    font-size: 1.5em;
+  }
   footer{
     order: 5;
   }
