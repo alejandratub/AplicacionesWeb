@@ -1,0 +1,36 @@
+<!--Alejandra Tubilla
+	A01022960-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+     <title>Fibonacci</title>
+</head>
+<body>
+    <input id="num" type="text">
+    <input type="submit" onclick="num()"/>
+    <script>
+        function fibo(num, memo){
+            memo = memo || {};
+            if (memo[num]) return memo[num];
+            if (num <= 1) return 1;
+            memo[0] = 0;
+            memo[1] = 1;
+            console.log(memo[0]);
+            console.log(memo[1]);
+            var i;
+            for(i = 2; i<num; i++){
+                memo[i]=(memo[i-1]+memo[i-2]);
+                console.log(memo[i]);
+            }
+            return memo[num-1];
+        }
+        function num(){
+            var value = document.getElementById("num").value;
+            console.log(value);
+            var val = fibo(value);
+            console.log(val);
+        }
+    </script>
+</body>
+</html>
