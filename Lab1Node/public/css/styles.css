@@ -1,0 +1,195 @@
+/*
+Jesús Horacio Rojas Cortés A01020026
+Alejandra Tubilla Castellanos A01022960
+*/
+*{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  width: 90%;
+  background-color: #f2ff7b;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  border: 0;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+header >img{
+  width: 100%;
+  display: block;
+}
+
+header, ul, li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+}
+nav > ul{
+  list-style: none;
+  list-style-image: none;
+  background-color: #dbb44c;
+}
+ul >li{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > ul > li > a{
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+nav{
+  width: 100%;
+  height: auto;
+}
+a, a:visited, a:link{
+  color: black;
+
+}
+
+ li a:hover{
+  color: white;
+}
+#arrows img{
+  width: 20%;
+}
+#arrows a > img.inverted{
+  padding-left: 80%;
+}
+
+#info{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+  background-color: #565658;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+  margin: auto;
+}
+
+#clicked{
+  color: blue;
+}
+
+.hovered{
+  color: darkgreen;
+}
+
+/* Container for flexboxes */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container > li{
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.comics{
+    flex: 60%;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 1%;
+    margin-top: 5%;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
+.comicItem{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.comics .col1{
+  width: 100%;
+}
+
+.comics .col2{
+  width: 45%;
+}
+.comics .col3{
+  width: 45%;
+}
+
+.inverted{
+  transform: rotateY(180deg);
+}
+div.arrows{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+h2{
+  text-align: center;
+  font-size: 1.2em;
+  padding: 4%;
+}
+h1{
+  font-size: 1.2em;
+  align-self: center;
+}
+p{
+  text-align: justify;
+  font-size: 0.8em;
+  padding: 4%;
+}
+div.footer{
+  width: 100%;
+}
+.textInfo{
+  flex: 20%;
+  background-color: #f5dfba;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 481px) {
+    .container {
+      flex-direction: column;
+    }
+    .container > li{
+      flex-basis: 50%;
+    }
+
+    .comics .col2, .comics .col3{
+      width: 100%;
+    }
+    nav{
+      order: 1;
+    }
+    footer{
+
+      order:99;
+    }
+    body{
+      height: 100%;
+      width: 100%;
+      background-color: navajowhite;
+      font-size: 0.8em;
+    }
+    .comics{
+      margin-right: 5%;
+    }
+}
